@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #111;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #444;
+  border-radius: 5px;
+}
+
+.hero {
+  text-align: center;
+  padding: 42vh 20px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+              url('https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/Sb7uiLMltks8nrrky/videoblocks-v1-0023_20211221-sf-shirokov-sound-studio-4-dobrolet-crossmedia00000000_h-li7s6tm5__39d460b4e4280f62ce859ce16d89db0c__P360.mp4') no-repeat center/cover;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.carousel-container {
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+  width: 100vw;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+  padding: 10px 20px;
+  border-radius: 50%;
+}
+
+.carousel-btn.prev {
+  left: 20px;
+}
+
+.carousel-btn.next {
+  right: 20px;
+}
+
+.studio-info {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.studio-info h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.info-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.info-item {
+  flex: 1 1 calc(33.333% - 20px);
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.info-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.info-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.info-item p {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .info-item {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .info-item {
+    flex: 1 1 100%;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 30px 10px;
+  background-color: rgb(64, 64, 64);
+  color: white;
+}
