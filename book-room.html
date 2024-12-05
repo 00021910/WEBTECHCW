@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Room - QuickWork Studios</title>
+  <link rel="stylesheet" href="bookaroom.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="rent-gear.html">Rent Gear</a>
+    <a href="about-us.html">About Us</a>
+    <a href="contact-us.html">Contact Us</a>
+  </nav>
+  
+  <section class="book-a-room">
+    <h2>Book a Studio Room</h2>
+    <p>Choose a studio room that suits your needs. We offer various sizes and configurations for artists, producers, and musicians.</p>
+
+    <div class="rooms">
+      <div class="room">
+        <img src="https://dt7v1i9vyp3mf.cloudfront.net/styles/news_large/s3/imagelibrary/S/StudioSOS_0419_01-f6RXP_X55KTax6P6xkJY6E3y5Fr20cVk.jpg" alt="Small Studio Room">
+        <h3>Small Studio Room</h3>
+        <p>Perfect for solo artists or small sessions. Equipped with basic recording gear.</p>
+        <button class="book-btn">Book Now</button>
+      </div>
+      <div class="room">
+        <img src="https://149354043.v2.pressablecdn.com/wp-content/uploads/2022/06/IMG_4822-2-scaled.jpg" alt="Medium Studio Room">
+        <h3>Medium Studio Room</h3>
+        <p>Ideal for small bands or producers. Includes premium recording gear.</p>
+        <button class="book-btn">Book Now</button>
+      </div>
+      <div class="room">
+        <img src="https://www.clearlakerecordingstudios.com/wp-content/uploads/2023/09/A-console-looking-back-1.jpg" alt="Large Studio Room">
+        <h3>Large Studio Room</h3>
+        <p>Best suited for full bands or large-scale production. Fully equipped with advanced recording equipment.</p>
+        <button class="book-btn">Book Now</button>
+      </div>
+    </div>
+
+    <div class="room-details">
+      <h3>Room Booking Details</h3>
+      <form id="room-booking-form">
+        <label for="room-type">Choose Room Type:</label>
+        <select id="room-type">
+          <option value="small">Small Studio Room</option>
+          <option value="medium">Medium Studio Room</option>
+          <option value="large">Large Studio Room</option>
+        </select>
+
+        <label for="date">Select Date:</label>
+        <input type="date" id="date" required>
+
+        <label for="time">Select Time:</label>
+        <input type="time" id="time" required>
+
+        <button type="submit">Confirm Booking</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="bookaroom.js"></script>
+</body>
+</html>
