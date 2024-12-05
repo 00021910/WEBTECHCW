@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    background-color: #575757;
+  }
+  
+  .rent-gear {
+    text-align: center;
+  }
+  
+  .rent-gear h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .rent-gear p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .gear {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .gear-item {
+    width: 30%;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .gear-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .gear-item h3 {
+    margin-top: 15px;
+  }
+  
+  .rent-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .rent-btn:hover {
+    background-color: #575757;
+  }
+  
+  .gear-details {
+    margin-top: 40px;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .gear-details h3 {
+    margin-bottom: 15px;
+  }
+  
+  .gear-details form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .gear-details label {
+    font-size: 1rem;
+  }
+  
+  .gear-details input, .gear-details select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .gear-details button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .gear-details button:hover {
+    background-color: #575757;
+  }
+  
+  @media (max-width: 768px) {
+    .gear {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .gear-item {
+      width: 80%;
+      margin: 0 auto;
+    }
+  
+    .gear-details {
+      max-width: 100%;
+    }
+  }
+  
