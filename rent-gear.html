@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rent Gear - QuickWork Studios</title>
+  <link rel="stylesheet" href="rentgear.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about-us.html">About Us</a>
+    <a href="book-room.html">Book a Room</a>
+    <a href="contact-us.html">Contact Us</a>
+  </nav>
+
+  <section class="rent-gear">
+    <h2>Rent Studio Gear</h2>
+    <p>Select from a range of professional gear for your recording session. Whether you need microphones, headphones, or speakers, we have you covered.</p>
+
+    <div class="gear">
+      <div class="gear-item">
+        <img src="https://www.legatomusiccenter.com/wp-content/uploads/thumb-443.jpg" alt="Microphone">
+        <h3>Microphone</h3>
+        <p>High-quality condenser microphones for crystal-clear recordings. All microphones are condenser/XLR.</p>
+        <button class="rent-btn">Rent Now</button>
+      </div>
+      <div class="gear-item">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/51N0VF1L7uL.jpg" alt="Speaker">
+        <h3>Speaker</h3>
+        <p>Powerful speakers for accurate sound monitoring during production. Essential for mastering</p>
+        <button class="rent-btn">Rent Now</button>
+      </div>
+      <div class="gear-item">
+        <img src="https://productimages.etrusted.com/products/prt-55a845e0-fbcb-4807-bb8f-36f478dfbf2a/1/original.png" alt="Headphones">
+        <h3>Headphones</h3>
+        <p>Studio-grade headphones for detailed listening and mixing. Most neutral sound experience for mixing</p>
+        <button class="rent-btn">Rent Now</button>
+      </div>
+      <div class="gear-item">
+        <img src="https://sonicacoustics.com/cdn/shop/products/91olGnoGD7L._AC_SL1500.jpg?v=1694535911" alt="Soundproof Padding">
+        <h3>Soundproof Padding (x20)</h3>
+        <p>High-density soundproof padding for improving acoustics. Each rental unit includes 20 panels</p>
+        <button class="rent-btn">Rent Now</button>
+      </div>
+    </div>
+
+    <div class="gear-details">
+      <h3>Gear Rental Details</h3>
+      <form id="gear-rental-form">
+        <label for="gear-type">Choose Gear Type:</label>
+        <select id="gear-type">
+          <option value="microphone">Microphone</option>
+          <option value="speaker">Speaker</option>
+          <option value="headphones">Headphones</option>
+          <option value="soundproof-padding">Soundproof Padding</option>
+        </select>
+
+        <label for="duration">Rental Duration (days):</label>
+        <input type="number" id="duration" required min="1">
+
+        <button type="submit">Confirm Rental</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="rentgear.js"></script>
+</body>
+</html>
